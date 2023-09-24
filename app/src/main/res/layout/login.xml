@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="279dp"
+        android:layout_height="345dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.082"
+        app:srcCompat="@drawable/combustible" />
+
+    <LinearLayout
+        android:id="@+id/contenedor_Login"
+        android:layout_width="409dp"
+        android:layout_height="495dp"
+        android:background="@drawable/fondo_login"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <EditText
+            android:id="@+id/edt_usuario"
+            android:layout_width="290dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/edittext_redondos_blancos"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="usuario"
+            android:inputType="text"
+            android:textColorHint="#546E7A"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/edt_pass"
+            android:layout_width="290dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edittext_redondos_blancos"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="contraseña"
+            android:inputType="textPassword"
+            android:textColorHint="#546E7A"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="290dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#fff"
+            android:text="¿Has olvidado tu contraseña?" />
+
+        <Button
+            android:id="@+id/btn_ingresar"
+            android:layout_width="290dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="70dp"
+            android:backgroundTint="#ED1B24"
+            android:text="Ingresar" />
+
+        <Button
+            android:id="@+id/btn_registrar"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="290dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="20dp"
+            android:onClick="Registro"
+            android:text="Registrarse"
+            android:textColor="#fff"
+            app:strokeColor="#fff" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
